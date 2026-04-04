@@ -23,6 +23,7 @@
                 <a href="{{ url_for('register') }}" class="btn-primary">Get started free</a>
                 <a href="{{ url_for('login') }}" class="btn-secondary">Sign in</a>
             </div>
+            <button type="button" class="btn-ghost-modal" id="openModalBtn">See how it works</button>
         </div>
     </div>
     <div class="hero-visual">
@@ -87,6 +88,26 @@
         </div>
     </div>
 </section>
+
+<!-- Video Modal -->
+<div class="modal-overlay" id="videoModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModalBtn" aria-label="Close modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="video-container">
+            <iframe id="videoFrame"
+                    src=""
+                    title="How Spendly Works"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 
 <section class="features">
     <div class="features-inner">
